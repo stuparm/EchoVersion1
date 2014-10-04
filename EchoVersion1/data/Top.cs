@@ -4,19 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EchoVersion1.top
+namespace EchoVersion1.data
 {
-    public class Top
+    public sealed class Top
     {
-        private static Top instance;
-
-        private static Top()
-        {
-
-        }
+        private static Top instance = null;
 
 
-        public Top Instance
+        public static Top Instance
         {
             get 
             {
@@ -27,10 +22,7 @@ namespace EchoVersion1.top
             
         }
 
-        public void biloSta()
-        {
-
-        }
+        
         
 
 
